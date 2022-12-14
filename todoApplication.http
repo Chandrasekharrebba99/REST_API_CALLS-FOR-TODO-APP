@@ -1,0 +1,32 @@
+###
+GET http://localhost:3000/todos/todos/?category=WORK&status=DONE
+
+###
+GET http://localhost:3000/todos/2
+
+###
+GET http://localhost:3000/agenda/?date=2021-3-09
+
+###
+POST http://localhost:3000/todos/
+Content-Type:application/json
+
+{
+"id": 7,
+"todo": "efvcize event theme",
+"priority": "LOW",
+"status": "TO DO",
+"category": "HOME",
+"dueDate": "2021-02-22"
+}
+
+###
+PUT http://localhost:3000/todos/45
+Content-Type:application/json
+
+{
+"status":"DONE"
+}
+
+###
+DELETE http://localhost:3000/todos/7
